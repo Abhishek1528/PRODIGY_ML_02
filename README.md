@@ -1,70 +1,43 @@
 Customer Segmentation Using K-means Clustering
 
-This project demonstrates how to perform customer segmentation using the K-means clustering algorithm in Python. The dataset used is the Mall_Customers.csv which contains basic information about customers like their age, annual income, and spending score. This project also includes a 3D visualization of the clustered data to better understand customer segments.
-
 Table of Contents
-Introduction
-Dataset
-Project Steps
-Requirements
-Usage
-Results
-Contributing
-License
-Introduction
-Customer segmentation is a key task in marketing that involves dividing a customer base into groups of individuals that are similar in specific ways relevant to marketing, such as age, gender, interests, and spending habits. By understanding these segments, businesses can target their marketing efforts more effectively.
 
-Dataset
-The dataset used in this project is Mall_Customers.csv, which contains the following columns:
+-Overview
+-Dataset
+-Project Workflow
+-Installation
+-Visualization
+-Contributing
 
-CustomerID: Unique ID assigned to the customer
-Gender: Gender of the customer
-Age: Age of the customer
-Annual Income (k$): Annual income of the customer in thousand dollars
-Spending Score (1-100): Spending score assigned to the customer based on their purchasing behavior
-The dataset can be found in the data folder or can be downloaded from here.
+Overview:
+-Customer segmentation helps businesses understand their customer base better and tailor their marketing efforts accordingly. This project utilizes the Mall_Customers.csv dataset to perform clustering and visualize the customer segments in 3D.
 
-Project Steps
-Data Loading and Exploration: Load the dataset and perform basic data exploration.
-Feature Selection: Select relevant features for clustering (Age, Annual Income (k$), Spending Score (1-100)).
-Data Normalization: Normalize the selected features.
-Optimal Number of Clusters: Use the elbow method to determine the optimal number of clusters.
-K-means Clustering: Apply the K-means clustering algorithm to the normalized data.
-3D Visualization: Visualize the clusters in a 3D scatter plot.
-Requirements
-To run this project, you need to have the following libraries installed:
+Dataset:
+The dataset used in this project is Mall_Customers.csv, which contains information about customers, including:
 
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-You can install these libraries using pip:
+-CustomerID: Unique identifier for each customer
+-Gender: Gender of the customer
+-Age: Age of the customer
+-Annual Income (k$): Annual income of the customer in thousands of dollars
+-Spending Score (1-100): Spending score assigned based on customer behavior and purchasing data
 
-sh
-Copy code
+Project Workflow:
+
+1.Data Loading and Exploration: Load and explore the dataset.
+2.Feature Selection: Select the relevant features for clustering (Age, Annual Income (k$), Spending Score (1-100)).
+3.Data Normalization: Normalize the selected features for better clustering performance.
+4.Optimal Number of Clusters: Use the elbow method to find the optimal number of clusters.
+5.K-means Clustering: Apply the K-means algorithm to the normalized data.
+6.3D Visualization: Create a 3D scatter plot to visualize the customer clusters.
+
+Installation
+To set up the project locally, install the necessary libraries:
+- code:
 pip install pandas numpy scikit-learn matplotlib seaborn
-Usage
-Clone the repository:
-sh
-Copy code
-git clone https://github.com/yourusername/customer-segmentation-kmeans.git
-Navigate to the project directory:
-sh
-Copy code
-cd customer-segmentation-kmeans
-Run the Jupyter Notebook or the Python script:
-sh
-Copy code
-jupyter notebook customer_segmentation.ipynb
-or
 
-sh
-Copy code
-python customer_segmentation.py
-Results
-The results of the K-means clustering algorithm are visualized in a 3D scatter plot, showing the customer segments based on age, annual income, and spending score. The clusters are color-coded to indicate different segments.
+Visualization:
+The project includes a 3D scatter plot to visualize the customer segments. The clusters are color-coded, helping to identify distinct groups based on age, annual income, and spending score.
 
+Contributing:
+Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
 
-Contributing
-Contributions are welcome! If you have any improvements or suggestions, feel free to create an issue or submit a pull request.
